@@ -34,6 +34,8 @@ NeoBundle 'Shougo/neomru.vim'
 " ファイルをtree表示してくれる
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'fatih/vim-go'
+" color scheme
+NeoBundle 'tomasr/molokai'
 
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
@@ -44,6 +46,7 @@ call neobundle#end()
 " Required:
 filetype plugin indent on
 syntax on
+colorscheme molokai
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
