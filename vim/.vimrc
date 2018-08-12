@@ -1,5 +1,3 @@
-
-
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
 
@@ -95,4 +93,3 @@ if &term =~ "xterm"
     cnoremap <special> <Esc>[200~ <nop>
     cnoremap <special> <Esc>[201~ <nop>
 endif
-
