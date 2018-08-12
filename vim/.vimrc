@@ -1,14 +1,4 @@
-set number
-set expandtab
-set tabstop=2
-set softtabstop=2
-set autoindent
-set smartindent
-set shiftwidth=2
 
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap [<Enter> []<Left><CR><ESC><S-o>
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
@@ -36,6 +26,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'fatih/vim-go'
 " color scheme
 NeoBundle 'tomasr/molokai'
+NeoBundle 'kana/vim-submode'
 
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
@@ -52,6 +43,42 @@ colorscheme molokai
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 set tags=/home/vagrant/cppp/tags
+
+set number
+set title
+set expandtab
+set tabstop=2
+set softtabstop=2
+set autoindent
+set smartindent
+set shiftwidth=2
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set nrformats-=octal
+set hidden
+set hlsearch
+set backspace=indent,eol,start
+set wildmenu
+
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap [<Enter> []<Left><CR><ESC><S-o>
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
+
+hi visual ctermfg=black ctermbg=darkcyan
+hi Search cterm=NONE ctermfg=grey ctermbg=blue
+
+nnoremap s <Nop>
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sh <C-w>h
+call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
+call submode#map('bufmove', 'n', '', '>', '<C-w>>')
+call submode#map('bufmove', 'n', '', '<', '<C-w><')
+call submode#map('bufmove', 'n', '', '+', '<C-w>+')
+call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 
 if &term =~ "xterm"
     let &t_ti .= "\e[?2004h"
