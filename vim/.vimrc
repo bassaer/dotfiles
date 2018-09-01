@@ -25,6 +25,7 @@ NeoBundle 'fatih/vim-go'
 " color scheme
 NeoBundle 'tomasr/molokai'
 NeoBundle 'kana/vim-submode'
+NeoBundle 'editorconfig/editorconfig-vim'
 
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
