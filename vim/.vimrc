@@ -99,3 +99,7 @@ endif
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+
+# template
+autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt
+autocmd BufNewFile *.html 0r $HOME/.vim/template/html.txt
