@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+#include <sstream>
+
+using namespace std;
+
+int main() {
+  printf("\n");
+}
