@@ -104,3 +104,4 @@ let g:go_highlight_structs = 1
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt
 autocmd BufNewFile *.html 0r $HOME/.vim/template/html.txt
 autocmd BufNewFile build.gradle 0r $HOME/.vim/template/gradle.txt
+autocmd BufNewFile *.kt 0r $HOME/.vim/template/kt.txt

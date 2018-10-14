@@ -1,0 +1,8 @@
+/*
+ $ kotlinc foo.kt -include-runtime -d foo.jar
+ $ java -jar foo.jar
+*/
+
+fun main(args: Array<String>) {
+    println("hello")
+}
