@@ -1,0 +1,7 @@
+def foo
+  p 'foo'
+end
+
+if __FILE__ == $0
+  foo
+end
