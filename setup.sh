@@ -9,7 +9,6 @@ do
   cp "dotfiles/zsh/$f" ~/$f
 done
 
-cd ~/.zprezto; git apply ~/dotfiles/zsh/zprezto/zprezto.patch
 patch -uR ~/.zprezto/runcoms/zpreztorc < ~/dotfiles/zsh/zprezto/zpreztorc.patch
 patch -uR ~/.zprezto/modules/prompt/external/pure/pure.zsh < ~/dotfiles/zsh/zprezto/pure.patch
 
