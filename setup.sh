@@ -10,6 +10,7 @@ do
 done
 
 cp dotfiles/vim/.vimrc ~/.vimrc
+cp -r dotfiles/vim/.vim/ ~/
 sh dotfiles/vim/install.sh
 
 wget https://github.com/peco/peco/releases/download/v0.2.9/peco_linux_amd64.tar.gz
