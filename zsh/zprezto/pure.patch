@@ -1,29 +1,47 @@
---- modules/prompt/external/pure/pure.zsh	2018-10-27 13:26:23.000000000 +0900
-+++ /Users/nakayama/prezto/modules/prompt/external/pure/pure.zsh	2018-10-27 13:06:48.000000000 +0900
-@@ -115,7 +115,7 @@ prompt_pure_preprompt_render() {
+--- prezto/modules/prompt/external/pure/pure.zsh	2018-10-27 23:46:05.995899271 +0900
++++ /home/tsnakaya/.zprezto/modules/prompt/external/pure/pure.zsh	2018-10-27 23:43:49.912634978 +0900
+@@ -115,7 +115,7 @@
  	local -a preprompt_parts
- 
+
  	# Set the path.
--	preprompt_parts+=('%F{cyan}%~%f')
-+	preprompt_parts+=('%F{blue}%~%f')
- 
+-	preprompt_parts+=('%F{blue}%~%f')
++	preprompt_parts+=('%F{cyan}%~%f')
+
  	# Add git branch and dirty status info.
  	typeset -gA prompt_pure_vcs_info
-@@ -529,7 +529,7 @@ prompt_pure_state_setup() {
+@@ -498,6 +498,7 @@
+ 	# Check SSH_CONNECTION and the current state.
+ 	local ssh_connection=${SSH_CONNECTION:-$PROMPT_PURE_SSH_CONNECTION}
+ 	local username
++	local yroot
+ 	if [[ -z $ssh_connection ]] && (( $+commands[who] )); then
+ 		# When changing user on a remote system, the $SSH_CONNECTION
+ 		# environment variable can be lost, attempt detection via who.
+@@ -529,14 +530,16 @@
  	fi
- 
+
  	# show username@host if logged in through SSH
--	username='%F{242}%M%F'
-+	[[ -n $ssh_connection ]] && username='%F{242}%n@%m%f'
- 
+-	[[ -n $ssh_connection ]] && username='%F{242}%n@%m%f'
++	username='%F{242}%M%F'
+
  	# show username@host if root, with username in white
  	[[ $UID -eq 0 ]] && username='%F{white}%n%f%F{242}@%m%f'
-@@ -584,7 +584,7 @@ prompt_pure_setup() {
+
++	[[ -n $YROOT_NAME ]] && yroot="%F{magenta} ❮ $YROOT_NAME"
++
+ 	typeset -gA prompt_pure_state
+ 	prompt_pure_state=(
+-		username "$username"
++		username "$username $yroot"
+ 		prompt	 "${PURE_PROMPT_SYMBOL:-❯}"
+ 	)
+ }
+@@ -584,7 +587,7 @@
  	PROMPT='%(12V.%F{242}%12v%f .)'
- 
+
  	# prompt turns red if the previous command didn't exit with 0
--	PROMPT+='%(?.%F{cyan}.%F{green})${prompt_pure_state[prompt]}%f '
-+	PROMPT+='%(?.%F{magenta}.%F{red})${prompt_pure_state[prompt]}%f '
- 
+-	PROMPT+='%(?.%F{magenta}.%F{red})${prompt_pure_state[prompt]}%f '
++	PROMPT+='%(?.%F{cyan}.%F{green})${prompt_pure_state[prompt]}%f '
+
  	# Store prompt expansion symbols for in-place expansion via (%). For
  	# some reason it does not work without storing them in a variable first.
