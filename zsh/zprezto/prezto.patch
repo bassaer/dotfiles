@@ -1,0 +1,28 @@
+diff --git a/modules/prompt/external/pure b/modules/prompt/external/pure
+--- a/modules/prompt/external/pure
++++ b/modules/prompt/external/pure
+@@ -1 +1 @@
+-Subproject commit 7aade5fca2acae3f10e260d0c076af6356da9dc6
++Subproject commit 7aade5fca2acae3f10e260d0c076af6356da9dc6-dirty
+diff --git a/runcoms/zpreztorc b/runcoms/zpreztorc
+index a549073..3690485 100644
+--- a/runcoms/zpreztorc
++++ b/runcoms/zpreztorc
+@@ -35,6 +35,8 @@ zstyle ':prezto:load' pmodule \
+   'spectrum' \
+   'utility' \
+   'completion' \
++  'syntax-highlighting' \
++  'autosuggestions' \
+   'prompt'
+ 
+ #
+@@ -113,7 +115,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
+ # Set the prompt theme to load.
+ # Setting it to 'random' loads a random theme.
+ # Auto set to 'off' on dumb terminals.
+-zstyle ':prezto:module:prompt' theme 'sorin'
++zstyle ':prezto:module:prompt' theme 'pure'
+ 
+ # Set the working directory prompt display length.
+ # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
