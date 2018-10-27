@@ -10,6 +10,8 @@ do
 done
 
 cd ~/.zprezto; git apply ~/dotfiles/zsh/zprezto/zprezto.patch
+patch -uR ~/.zprezto/runcoms/zpreztorc < ~/dotfiles/zsh/zprezto/zpreztorc.patch
+patch -uR ~/.zprezto/modules/prompt/external/pure/pure.zsh < ~/dotfiles/zsh/zprezto/pure.patch
 
 cp dotfiles/vim/.vimrc ~/.vimrc
 cp -r dotfiles/vim/.vim/ ~/

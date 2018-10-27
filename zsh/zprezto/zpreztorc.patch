@@ -1,0 +1,20 @@
+--- runcoms/zpreztorc	2018-10-27 13:22:20.000000000 +0900
++++ /Users/nakayama/prezto/runcoms/zpreztorc	2018-10-27 13:06:24.000000000 +0900
+@@ -35,8 +35,6 @@ zstyle ':prezto:load' pmodule \
+   'spectrum' \
+   'utility' \
+   'completion' \
+-  'syntax-highlighting' \
+-  'autosuggestions' \
+   'prompt'
+ 
+ #
+@@ -115,7 +113,7 @@ zstyle ':prezto:module:editor' key-bindi
+ # Set the prompt theme to load.
+ # Setting it to 'random' loads a random theme.
+ # Auto set to 'off' on dumb terminals.
+-zstyle ':prezto:module:prompt' theme 'pure'
++zstyle ':prezto:module:prompt' theme 'sorin'
+ 
+ # Set the working directory prompt display length.
+ # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
