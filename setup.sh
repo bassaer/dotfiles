@@ -9,8 +9,8 @@ do
   cp "dotfiles/zsh/$f" ~/$f
 done
 
-patch -uR ~/.zprezto/runcoms/zpreztorc < ~/dotfiles/zsh/zprezto/zpreztorc.patch
-patch -uR ~/.zprezto/modules/prompt/external/pure/pure.zsh < ~/dotfiles/zsh/zprezto/pure.patch
+patch -u ~/.zprezto/runcoms/zpreztorc < ~/dotfiles/zsh/zprezto/zpreztorc.patch
+patch -u ~/.zprezto/modules/prompt/external/pure/pure.zsh < ~/dotfiles/zsh/zprezto/pure.patch
 
 cp ~/dotfiles/vim/.vimrc ~/.vimrc
 cp -r ~/dotfiles/vim/.vim/ ~/
