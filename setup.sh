@@ -9,6 +9,8 @@ do
   cp "dotfiles/zsh/$f" ~/$f
 done
 
+cd ~/.zprezto; git apply dotfiles/zsh/prezto/prezto.patch
+
 cp dotfiles/vim/.vimrc ~/.vimrc
 cp -r dotfiles/vim/.vim/ ~/
 sh dotfiles/vim/install.sh
