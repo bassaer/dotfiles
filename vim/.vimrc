@@ -105,6 +105,13 @@ augroup vimrcEx
   \ exe "normal g`\"" | endif
 augroup END
 
+" keep center cursor
+augroup VCenterCursor
+  au!
+  au BufEnter,WinEnter,WinNew,VimResized *,*.*
+        \ let &scrolloff=winheight(win_getid())/2
+augroup END
+
 let g:go_version_warning = 0
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
