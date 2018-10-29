@@ -59,6 +59,8 @@ set hlsearch
 set backspace=indent,eol,start
 set wildmenu
 set incsearch
+set ruler
+set statusline=%F%r%=%l,%c
 
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
@@ -96,6 +98,12 @@ if &term =~ "xterm"
     cnoremap <special> <Esc>[200~ <nop>
     cnoremap <special> <Esc>[201~ <nop>
 endif
+
+" keep cursor position
+augroup vimrcEx
+  au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
+  \ exe "normal g`\"" | endif
+augroup END
 
 let g:go_version_warning = 0
 let g:go_highlight_functions = 1
