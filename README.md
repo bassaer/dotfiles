@@ -1,11 +1,9 @@
 # dotfiles
 
 ```
-$ wget https://raw.githubusercontent.com/bassaer/dotfiles/master/install.sh
-$ sh install.sh
+$ curl https://raw.githubusercontent.com/bassaer/dotfiles/master/install.sh | sh
 ```
 
 ```
-$ wget https://raw.githubusercontent.com/bassaer/dotfiles/master/setup.sh
-$ sh setup.sh
+$ curl https://raw.githubusercontent.com/bassaer/dotfiles/master/setup.sh | sh
 ```
