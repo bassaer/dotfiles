@@ -123,3 +123,4 @@ autocmd BufNewFile *.html 0r $HOME/.vim/template/html.txt
 autocmd BufNewFile build.gradle 0r $HOME/.vim/template/gradle.txt
 autocmd BufNewFile *.kt 0r $HOME/.vim/template/kt.txt
 autocmd BufNewFile *.rb 0r $HOME/.vim/template/rb.txt
+autocmd BufNewFile *.py 0r $HOME/.vim/template/py.txt
