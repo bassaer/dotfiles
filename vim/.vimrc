@@ -53,7 +53,7 @@ set autoindent
 set smartindent
 set shiftwidth=2
 set list
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set listchars=tab:»\ ,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set nrformats-=octal
 set hidden
 set hlsearch
