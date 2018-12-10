@@ -15,14 +15,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" ファイルオープンを便利に
 NeoBundle 'Shougo/unite.vim'
-" Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
-" ファイルをtree表示してくれる
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'fatih/vim-go'
-" color scheme
 NeoBundle 'tomasr/molokai'
 NeoBundle 'kana/vim-submode'
 NeoBundle 'editorconfig/editorconfig-vim'
