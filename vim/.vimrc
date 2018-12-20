@@ -40,6 +40,7 @@ colorscheme molokai
 NeoBundleCheck
 set tags=/home/vagrant/cppp/tags
 
+set encoding=utf-8
 set number
 set title
 set expandtab
