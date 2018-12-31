@@ -63,5 +63,8 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 export GOROOT=$HOME/go
 export GOPATH=$GOROOT/workspace
+export ANDROID_HOME=/Users/$(whoami)/Library/Android/sdk
 export PATH=$PATH:$HOME/go/bin
-export PATH="$PATH:$HOME/peco_linux_amd64"
+export PATH=$PATH:$HOME/peco_linux_amd64
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
