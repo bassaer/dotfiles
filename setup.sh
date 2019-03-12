@@ -14,6 +14,7 @@ patch -u ~/.zprezto/modules/prompt/external/pure/pure.zsh < ~/dotfiles/zsh/zprez
 
 cp ~/dotfiles/vim/.vimrc ~/.vimrc
 cp -r ~/dotfiles/vim/.vim/ ~/
+cp -r ~/dotfiles/.config ~/
 sh ~/dotfiles/vim/install.sh
 
 cd
