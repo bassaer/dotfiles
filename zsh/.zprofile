@@ -61,6 +61,15 @@ export LESS='-F -g -i -M -R -S -w -X -z-4'
 if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+if [[ -d $PYENV_ROOT ]];then
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
+
 export GOROOT=$HOME/go
 export GOPATH=$GOROOT/workspace
 export ANDROID_HOME=$HOME/Library/Android/sdk
