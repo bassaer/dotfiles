@@ -1,9 +1,10 @@
 #!/bin/bash
 
+set -e
+
 sudo yum -y remove vim-enhanced
-rm -rf vim
-git clone https://github.com/vim/vim.git
-cd vim/src
-make
+rm -rf /tmp/vim
+git clone https://github.com/vim/vim.git /tmp/vim
+cd /tmp/vim/src
 sudo make install
-vim --version | head -n 1
+vim --version | head -1
