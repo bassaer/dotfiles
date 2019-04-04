@@ -3,14 +3,14 @@
 ### setup zsh
 
 ```
-$ curl https://raw.githubusercontent.com/bassaer/dotfiles/master/install.sh | sh
+$ curl https://raw.githubusercontent.com/bassaer/dotfiles/master/install.sh | bash
 ```
 
 ```
-$ curl https://raw.githubusercontent.com/bassaer/dotfiles/master/setup.sh | sh
+$ curl https://raw.githubusercontent.com/bassaer/dotfiles/master/setup.sh | bash
 ```
 
 ### vim8
 ```
-$ curl https://raw.githubusercontent.com/bassaer/dotfiles/master/vim8.sh | sh
+$ curl https://raw.githubusercontent.com/bassaer/dotfiles/master/vim8.sh | bash
 ```
