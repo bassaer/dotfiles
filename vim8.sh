@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -e
-
 sudo yum -y remove vim-enhanced
 rm -rf /tmp/vim
 git clone https://github.com/vim/vim.git /tmp/vim
