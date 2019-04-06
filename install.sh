@@ -1,5 +1,5 @@
 #! /bin/sh
 
+set -e
 sudo yum -y install zsh git
-chsh -s /bin/zsh
-
+chsh -s $(which zsh)
