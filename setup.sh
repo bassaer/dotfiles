@@ -1,7 +1,8 @@
 #! /bin/sh
 
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+set -e
 
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 git clone https://github.com/bassaer/dotfiles.git
 
 for f in $(ls -a -1 -F dotfiles/zsh | grep -v /)
@@ -15,7 +16,7 @@ patch -u ~/.zprezto/modules/prompt/external/pure/pure.zsh < ~/dotfiles/zsh/zprez
 cp ~/dotfiles/vim/.vimrc ~/.vimrc
 cp -r ~/dotfiles/vim/.vim/ ~/
 cp -r ~/dotfiles/.config ~/
-sh ~/dotfiles/vim/install.sh
+bash ~/dotfiles/vim/install.sh
 
 cd
 
