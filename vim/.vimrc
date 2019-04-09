@@ -59,6 +59,7 @@ set wildmenu
 set incsearch
 set ruler
 set statusline=%F%r%=%l,%c
+set updatetime=200
 
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
