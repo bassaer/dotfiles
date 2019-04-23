@@ -116,6 +116,7 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_fmt_command = "goimports"
+let g:go_template_autocreate = 0
 
 " template
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt
@@ -124,3 +125,4 @@ autocmd BufNewFile build.gradle 0r $HOME/.vim/template/gradle.txt
 autocmd BufNewFile *.kt 0r $HOME/.vim/template/kt.txt
 autocmd BufNewFile *.rb 0r $HOME/.vim/template/rb.txt
 autocmd BufNewFile *.py 0r $HOME/.vim/template/py.txt
+autocmd BufNewFile *.go 0r $HOME/.vim/template/go.txt
