@@ -61,6 +61,7 @@ set incsearch
 set ruler
 set statusline=%F%r%=%l,%c
 set updatetime=200
+set ignorecase
 
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
