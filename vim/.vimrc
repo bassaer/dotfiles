@@ -60,7 +60,7 @@ set wildmenu
 set incsearch
 set ruler
 set statusline=%F%r%=%l,%c
-set updatetime=200
+set updatetime=200 " for vim-gitgutter
 set ignorecase
 
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
