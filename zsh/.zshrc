@@ -34,3 +34,7 @@ export SAVEHIST=100000
 
 setopt hist_ignore_dups
 setopt EXTENDED_HISTORY
+
+export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
+export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
