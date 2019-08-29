@@ -128,3 +128,8 @@ autocmd BufNewFile *.kt 0r $HOME/.vim/template/kt.txt
 autocmd BufNewFile *.rb 0r $HOME/.vim/template/rb.txt
 autocmd BufNewFile *.py 0r $HOME/.vim/template/py.txt
 autocmd BufNewFile *.go 0r $HOME/.vim/template/go.txt
+
+augroup fileTypeIndent
+    autocmd!
+    autocmd BufNewFile,BufRead *.s setlocal expandtab
+augroup END
