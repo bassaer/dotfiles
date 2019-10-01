@@ -80,3 +80,5 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/peco_linux_amd64
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
+
+source ~/.nvm/nvm.sh
