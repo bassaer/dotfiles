@@ -40,4 +40,5 @@ export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
 export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
 export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 
-export LANG=en_US
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
