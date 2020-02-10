@@ -70,6 +70,8 @@ if [[ -d $PYENV_ROOT ]];then
     eval "$(pyenv virtualenv-init -)"
 fi
 
+export GIT_PAGER="LESSCHARSET=utf-8 less"
+
 export GOROOT=$HOME/go
 export GOPATH=$GOROOT/workspace
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -80,5 +82,3 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/peco_linux_amd64
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
-
-source ~/.nvm/nvm.sh
