@@ -1,0 +1,3 @@
+! override key settings
+! Alt_R ==> Right
+keycode 108 = Right NoSymbol Right
