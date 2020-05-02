@@ -26,6 +26,12 @@ function peco-select-history() {
     CURSOR=$#BUFFER
     zle clear-screen
 }
+
+# for Ubuntu keybind
+if type xmodmap >/dev/null 2>&1; then
+  [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+fi
+
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
