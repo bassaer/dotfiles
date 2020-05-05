@@ -11,6 +11,7 @@ unsetopt correctall
 alias md5='python -c "import hashlib,sys; print hashlib.md5(sys.argv[1]).hexdigest()" '
 alias sha1='python -c "import hashlib,sys; print hashlib.sha1(sys.argv[1]).hexdigest()" '
 alias jst='python -c "import sys; from datetime import datetime, timedelta, timezone; print(datetime.fromisoformat(sys.argv[1].replace(\"Z\", \"+00:00\")).astimezone(tz=timezone(timedelta(hours=+9))))"'
+alias idea='open -a "IntelliJ IDEA CE.app"'
 
 # peco
 function peco-select-history() {
