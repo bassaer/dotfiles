@@ -6,6 +6,11 @@ fi
 
 autoload -Uz compinit
 compinit
+
+if [ -e /usr/local/share/zsh-completions ]; then
+  fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+
 unsetopt correctall
 
 alias md5='python -c "import hashlib,sys; print hashlib.md5(sys.argv[1]).hexdigest()" '
